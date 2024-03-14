@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai2</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .list {
+            width: 30%;
+            padding: 10px 5px;
+            background: white;
+            color: black;
+            margin: 0 5px;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+
+        .list img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                flex-direction: column;
+                /* Chuyển sang hiển thị dọc */
+                align-items: center;
+                /* Căn giữa các phần tử theo chiều dọc */
+            }
+
+            .list {
+                width: 100%;
+                /* Sử dụng toàn bộ chiều rộng */
+                margin-bottom: 20px;
+                /* Tạo khoảng cách giữa các phần tử */
+            }
+
+            .list img {
+                border-radius: 8px 8px 0 0;
+                /* Bo tròn góc chỉ ở phía trên */
+            }
+
+            .list>div {
+                padding: 10px;
+                /* Thêm padding cho các phần tử con */
+            }
+
+            .list h3 {
+                font-size: 14px;
+                /* Thay đổi kích thước font chữ */
+                margin-bottom: 10px;
+                /* Tạo khoảng cách dưới cho phần tử h3 */
+            }
+
+            .list>div>img {
+                width: 30%;
+                /* Độ rộng của ảnh avatar */
+            }
+
+            .list>div>h2 {
+                font-size: 18px;
+                /* Thay đổi kích thước font chữ */
+                margin-left: 0;
+                /* Reset margin */
+            }
+
+            .list>div>input[type="button"] {
+                width: 100%;
+                /* Sử dụng toàn bộ chiều rộng */
+                margin: 10px 0;
+                /* Tạo khoảng cách giữa nút và văn bản */
+            }
+
+            .list>div>p {
+                margin-left: 0;
+                /* Reset margin */
+                text-align: center;
+                /* Căn giữa văn bản */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="list">
+            <img src="meo1.jpg">
+            <h3>Nature is an important and integral part of mankind. It is
+                one of the greatest blessings for human life; however, nowadays
+                humans fail to recognize it as one.</h3>
+            <div style="display: flex; align-items: center;">
+                <img src="anhHoa.jpg" style="width: 40%;">
+                <h2 style="margin-left: 30px;">Tom</h2>
+            </div>
+            <div style="display: flex; align-items: center;border-top: 1px solid black">
+                <input type="button" value="Live"
+                    style="width: 120px; height: 40px; margin: 20px 10px; background-color: #F66092;">
+                <p style="margin-left: 60px;">4,2k watching</p>
+            </div>
+        </div>
+        <div class="list">
+            <img src="meo2.jpg">
+            <h3>Nature is an important and integral part of mankind.</h3>
+            <div style="display: flex; align-items: center;  margin-top: 62px;">
+                <img src="anhHoa.jpg" style="width: 40%; ">
+                <h2 style="margin-left: 30px;">Tom</h2>
+            </div>
+            <div style="display: flex; align-items: center;border-top: 1px solid black">
+                <input type="button" value="Live"
+                    style="width: 120px; height: 40px; margin: 20px 10px; background-color: #F66092;">
+                <p style="margin-left: 60px;">4,2k watching</p>
+            </div>
+        </div>
+        <div class="list">
+            <img src="meo3.jpg">
+            <h3>Nature is an important and integral part of mankind. It is one of the greatest blessings for human life.
+            </h3>
+            <div style="display: flex; align-items: center;  margin-top: 41px;">
+                <img src="anhHoa.jpg" style="width: 40%;">
+                <h2 style="margin-left: 30px;">Tom</h2>
+            </div>
+            <div style="display: flex; align-items: center;border-top: 1px solid black">
+                <input type="button" value="Live"
+                    style="width: 120px; height: 40px; margin: 20px 10px; background-color: #F66092;">
+                <p style="margin-left: 60px;">4,2k watching</p>
+            </div>
+        </div>
+        <div class="list">
+            <img src="meo4.jpg">
+            <h3>Nature is an important and integral part of mankind. It is
+                one of the greatest blessings for human life; however, nowadays
+                humans fail to recognize it as one.</h3>
+            <div style="display: flex; align-items: center;">
+                <img src="anhHoa.jpg" style="width: 40%;">
+                <h2 style="margin-left: 30px;">Tom</h2>
+            </div>
+            <div style="display: flex; align-items: center;border-top: 1px solid black">
+                <input type="button" value="Live"
+                    style="width: 120px; height: 40px; margin: 20px 10px; background-color: #F66092;">
+                <p style="margin-left: 60px;">4,2k watching</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
